@@ -2,3 +2,4 @@ import random
 terms = ["abstraction","decomposition","stepwise refinement","structured english","flowcharts","sequence","selection","iteration"]
 command = ["Analyse","Assess","Comment","Consider","Define","Demonstrate","Describe","Discuss","Evaluate","Examine","Explain","Identify","Outline","Sketch","State"]
 print(random.choice(command)+" what is meant by the term "+random.choice(terms)+".")
+answer = input("")
