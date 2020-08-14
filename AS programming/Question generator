@@ -1,5 +1,15 @@
 import random
 terms = ["abstraction","decomposition","stepwise refinement","structured english","flowcharts","sequence","selection","iteration"]
-command = ["Analyse","Assess","Comment","Consider","Define","Demonstrate","Describe","Discuss","Evaluate","Examine","Explain","Identify","Outline","Sketch","State"]
-print(random.choice(command)+" what is meant by the term "+random.choice(terms)+".")
+command = ["Comment","Consider","Define","Demonstrate","Describe","Discuss","Examine","Explain","Identify","State"]
+comparison = ["Compare","Assess","Evaluate","Analyse","Outline","Sketch"]
+simdif = ["similarities","differences"]
+if random.randint(1,2) == 1:
+    print(random.choice(command)+" what is meant by the term "+random.choice(terms)+".")
+else:
+    term1 = random.choice(terms)
+    while True:
+        term2 = random.choice(terms)
+        if term2 != term1:
+            break
+    print(random.choice(comparison) + " the " +random.choice(simdif)+" between the terms "+term2 +" and "+term1+ ".")
 answer = input("")
